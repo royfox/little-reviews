@@ -1,5 +1,14 @@
 [
   {
+    "title": "Highest 2 Lowest",
+    "type": "Movie",
+    "rating": 3.5,
+    "releaseYear": 2025,
+    "reviewDate": "2026-01-19T20:22:33.856Z",
+    "text": "I enjoyed this film, so it was funny to see afterwards that some people absolutely hated it. I found a Reddit thread about the film that was nothing but negativity, and when they pointed out all these plot holes, I was like \"well, now you mention it, that was a bit silly\". Sometimes I find you can take against a movie for whatever reason, and from then on every nonsensical thing a character will stick out like a sore thumb and annoy the hell out of you. But sometimes you seem to just roll with a movie, and the plot holes don't seem to bother you. For me this film stayed on the right side of that line. It was fun, I was willing to forgive the implausible moments. There's some action, some moral dilemmas, some good performances. I quite liked it. \n\nI'm not sure it was quite good enough to really stay with me though, apart from perhaps some of the music. The music is such an integral part of a lot of Spike Lee movies, and there's one particularly esoteric choice in this movie, which was to use a kind of slightly jazzy folk piece in a lot of the key moments (the main cue is Stony Gate 2, which is a more cinematic version of Stony Gate by Fergus McCreadie - the music was striking enough that I whipped out Shazam at the time to find out what it was). I thought that music worked great - it's propulsive, it's got the simplicity and repetition of folk music but also is also jazzy enough to have a certain je ne sais quoi and keep you on your toes. Those people on Reddit absolutely savaged that particular bit of a music - but as we've established they'd already taken agains the film for some reason. But I was still on board. That music was distinctive enough that I think if I ever hear it again it will always remind me of this film (a bit like how \"Chaiyya Chaiyya\" will always make me think of Inside Man). \n",
+    "id": "highest-2-lowest"
+  },
+  {
     "title": "The Sisters Brothers ",
     "type": "Book",
     "author": "Partrick deWitt",
@@ -16,16 +25,7 @@
     "releaseYear": 2026,
     "reviewDate": "2026-01-19T08:42:33.471Z",
     "updatedDate": "2026-01-19T19:19:08.064Z",
-    "text": "This is a movie about some police who find a load of drug money. I found the start a bit disjointed, but once they found $20m in cash and started to hint at stealing it, the film settled into a decent rhythm, and was reasonably tense and engaging. That suspense kinda fell away for me though - all the twists were completely telegraphed well in advance, and when they finally got to what I assume was supposed to be a big reveal that was surprising for the audience, it didn't really land for me because there were no surprises there at all (to the point where they must have known that was exactly what they were doing). The movie then finished with half an hour of fairly boring action, lots of fast cuts and I wasn't really invested in the chase by that point anyway. \n",
+    "text": "This is a movie about some police who find a load of drug money. I found the start a bit disjointed, but once they found $20m in cash and started to hint at stealing it, the film settled into a decent rhythm, and was reasonably tense and engaging. That suspense kinda fell away for me though - all the twists were completely telegraphed well in advance, and when they finally got to what I assume was supposed to be a big reveal that was surprising for the audience, it didn't really land for me because there were no surprises there at all (to the point where they must have known that was exactly what they were doing). The movie then finished with half an hour of fairly boring action, lots of fast cuts and I wasn't really invested in the chase by that point anyway. Didn't hate it, won't remember it. \n",
     "id": "the-rip"
-  },
-  {
-    "title": "Inception",
-    "type": "Movie",
-    "rating": 5,
-    "releaseYear": 2010,
-    "reviewDate": "2023-10-27T10:00:00.000Z",
-    "text": "A mind-bending masterpiece from Christopher Nolan. \nThe visual effects still hold up perfectly today, and the score by Hans Zimmer is iconic.\nHighly recommended for anyone who loves sci-fi thrillers.\n",
-    "id": "example"
   }
 ]

@@ -1,0 +1,31 @@
+[
+  {
+    "title": "The Sisters Brothers ",
+    "type": "Book",
+    "author": "Partrick deWitt",
+    "rating": 3.5,
+    "releaseYear": 2011,
+    "reviewDate": "2026-01-19T19:35:45.216Z",
+    "text": "This was worth reading, even if I ultimately wasn't completely invested in the story. The narrator Eli is an interesting character to listen to, he's simple-minded but insightful; empathetic and thoughtful yet also violent. For a while it's fun to go on an odyssey with him and his brother (and their relationship is very nicely drawn), and as they trot across The West and meet a cast of characters along the way, and a lot of the prose flows beautifully, and both our characters and the story keep moving. It all stalled for me when they arrived at their destination though – in the third act and the last third of the book, it started to drag and I realised I actually wasn’t very invested in the outcome and what actually happened to these characters. The characters stopped moving, the story stopped moving. That section felt like it was from a different book - rather than a quirky travel story, we ended up in a more stodgy allegory (the characters were trying to use some chemical to help them find gold even though the chemical was killing them). The denouement after that was nicely done though (and much faster than everything that led up to it). \n",
+    "id": "the-sisters-brothers"
+  },
+  {
+    "title": "The Rip",
+    "type": "Movie",
+    "rating": 3,
+    "releaseYear": 2026,
+    "reviewDate": "2026-01-19T08:42:33.471Z",
+    "updatedDate": "2026-01-19T19:19:08.064Z",
+    "text": "This is a movie about some police who find a load of drug money. I found the start a bit disjointed, but once they found $20m in cash and started to hint at stealing it, the film settled into a decent rhythm, and was reasonably tense and engaging. That suspense kinda fell away for me though - all the twists were completely telegraphed well in advance, and when they finally got to what I assume was supposed to be a big reveal that was surprising for the audience, it didn't really land for me because there were no surprises there at all (to the point where they must have known that was exactly what they were doing). The movie then finished with half an hour of fairly boring action, lots of fast cuts and I wasn't really invested in the chase by that point anyway. \n",
+    "id": "the-rip"
+  },
+  {
+    "title": "Inception",
+    "type": "Movie",
+    "rating": 5,
+    "releaseYear": 2010,
+    "reviewDate": "2023-10-27T10:00:00.000Z",
+    "text": "A mind-bending masterpiece from Christopher Nolan. \nThe visual effects still hold up perfectly today, and the score by Hans Zimmer is iconic.\nHighly recommended for anyone who loves sci-fi thrillers.\n",
+    "id": "example"
+  }
+]

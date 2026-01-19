@@ -1,0 +1,14 @@
+[build]
+  # 1. Install dependencies
+  # 2. Generate the reviews.json file from YAML
+  # 3. Build the React app (Vite/Create-React-App)
+  command = "npm install && node scripts/build-reviews.js && npm run build"
+  
+  # The directory that contains the deploy-ready HTML/JS/CSS
+  publish = "dist"
+
+[[redirects]]
+  # Handle Single Page Application routing (rewrites all paths to index.html)
+  from = "/*"
+  to = "/index.html"
+  status = 200

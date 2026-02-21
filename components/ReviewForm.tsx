@@ -16,7 +16,7 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ initialData, onSave, onC
   const [year, setYear] = useState<number>(initialData?.releaseYear || new Date().getFullYear());
   const [rating, setRating] = useState(initialData?.rating || 0);
   const [text, setText] = useState(initialData?.text || '');
-  
+
   const needsAuthor = type === MediaType.Book || type === MediaType.Music;
   const isEditing = !!initialData;
 
@@ -33,9 +33,9 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ initialData, onSave, onC
   };
 
   return (
-    <div className="bg-surface border border-border rounded-2xl p-6 md:p-8 max-w-3xl mx-auto shadow-xl relative overflow-hidden mb-12 animate-in fade-in slide-in-from-bottom-8">
+    <div className="bg-surface border border-border rounded-2xl p-6 md:p-8 max-w-3xl mx-auto shadow-xl relative overflow-hidden mb-12">
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary"></div>
-      
+
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold text-body">{isEditing ? 'Update & Download YAML' : 'Create Review YAML'}</h2>
         <button onClick={onCancel} className="text-muted hover:text-body transition-colors">
@@ -48,7 +48,7 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ initialData, onSave, onC
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-6">
-        
+
         {/* Type Selection */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
           {Object.values(MediaType).map((t) => (
@@ -56,11 +56,10 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ initialData, onSave, onC
               key={t}
               type="button"
               onClick={() => setType(t)}
-              className={`py-2 px-3 rounded-lg text-sm font-medium transition-all ${
-                type === t
+              className={`py-2 px-3 rounded-lg text-sm font-medium transition-all ${type === t
                   ? 'bg-primary text-white shadow-lg shadow-primary/25'
                   : 'bg-input text-muted hover:bg-border'
-              }`}
+                }`}
             >
               {t}
             </button>
@@ -115,10 +114,10 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ initialData, onSave, onC
 
         {/* Rating */}
         <div className="space-y-2">
-           <label className="block text-xs font-medium text-muted uppercase tracking-wide">Rating</label>
-           <div className="bg-input border border-border rounded-lg p-4 flex justify-center">
-             <StarRating rating={rating} onRatingChange={setRating} size={32} />
-           </div>
+          <label className="block text-xs font-medium text-muted uppercase tracking-wide">Rating</label>
+          <div className="bg-input border border-border rounded-lg p-4 flex justify-center">
+            <StarRating rating={rating} onRatingChange={setRating} size={32} />
+          </div>
         </div>
 
         {/* Review Text */}

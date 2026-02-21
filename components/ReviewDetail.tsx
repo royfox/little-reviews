@@ -28,17 +28,17 @@ export const ReviewDetail: React.FC<ReviewDetailProps> = ({ review, onBack, onEd
     day: 'numeric',
   });
 
-  const updatedDate = review.updatedDate 
+  const updatedDate = review.updatedDate
     ? new Date(review.updatedDate).toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-      })
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    })
     : null;
 
   return (
-    <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-      <button 
+    <div>
+      <button
         onClick={onBack}
         className="mb-6 flex items-center gap-2 text-muted hover:text-body transition-colors group"
       >
@@ -46,34 +46,27 @@ export const ReviewDetail: React.FC<ReviewDetailProps> = ({ review, onBack, onEd
         Back to list
       </button>
 
-      <article className="bg-surface rounded-2xl p-8 border border-border shadow-sm relative overflow-hidden">
-        
+      <article className="relative overflow-hidden pt-4">
+
         {/* Header Section */}
         <header className="mb-8 relative z-10">
-          <div className="flex flex-wrap items-center gap-4 mb-4">
-             <span className="flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 transition-colors">
-                <TypeIcon type={review.type} />
-                {review.type}
-             </span>
-             <span className="text-muted font-mono text-sm bg-input px-3 py-1.5 rounded-full border border-border">
-               {review.releaseYear}
-             </span>
-          </div>
-
-          <h1 className="text-4xl md:text-5xl font-bold text-body leading-tight mb-4">
-            {review.title}
+          <h1 className="text-2xl md:text-3xl font-bold text-body leading-tight mb-2 flex items-center flex-wrap gap-x-3">
+            <span className="inline-flex items-center shrink-0">
+              <TypeIcon type={review.type} />
+            </span>
+            <span>{review.title}</span>
+            {(review.author || review.releaseYear) && (
+              <span className="text-muted/60 font-normal text-xl md:text-2xl flex items-center gap-1.5 self-center translate-y-[1px]">
+                {review.author && <span>by {review.author}</span>}
+                {review.releaseYear && <span>({review.releaseYear})</span>}
+              </span>
+            )}
           </h1>
 
-          {(review.type === MediaType.Book || review.type === MediaType.Music) && review.author && (
-            <div className="text-xl text-muted font-medium mb-6">
-              by <span className="text-body">{review.author}</span>
-            </div>
-          )}
-
-          <div className="flex items-center gap-4 border-y border-border py-4">
-             <StarRating rating={review.rating} readOnly size={28} />
-             <span className="text-2xl font-bold text-yellow-500">{review.rating}</span>
-             <span className="text-muted text-sm uppercase tracking-wide">/ 5</span>
+          <div className="flex items-center gap-4 border-y border-border/50 py-3">
+            <StarRating rating={review.rating} readOnly size={20} />
+            <span className="text-xl font-bold text-yellow-500">{review.rating}</span>
+            <span className="text-muted text-xs uppercase tracking-wide">/ 5</span>
           </div>
         </header>
 
@@ -83,26 +76,26 @@ export const ReviewDetail: React.FC<ReviewDetailProps> = ({ review, onBack, onEd
         </div>
 
         {/* Footer */}
-        <footer className="flex flex-col md:flex-row justify-between items-end md:items-center gap-4 pt-6 border-t border-border">
+        <footer className="flex flex-col md:flex-row justify-between items-end md:items-center gap-4 pt-6 border-t border-border/50">
           <div className="text-muted text-sm">
-             <div className="flex items-center gap-2 mb-1">
-                <Calendar size={14} />
-                Reviewed on {formattedDate}
-             </div>
-             {updatedDate && (
-                <div className="text-xs italic opacity-75">
-                  Last updated: {updatedDate}
-                </div>
-             )}
+            <div className="flex items-center gap-2 mb-1">
+              <Calendar size={14} />
+              Reviewed on {formattedDate}
+            </div>
+            {updatedDate && (
+              <div className="text-xs italic opacity-75">
+                Last updated: {updatedDate}
+              </div>
+            )}
           </div>
 
           <div className="flex gap-3">
-            <button 
-                onClick={() => onEdit(review.id)}
-                className="flex items-center gap-2 bg-input hover:bg-border text-body px-4 py-2 rounded-lg transition-colors border border-border"
+            <button
+              onClick={() => onEdit(review.id)}
+              className="flex items-center gap-2 text-muted hover:text-body text-sm font-medium transition-colors"
             >
-                <Edit2 size={16} />
-                Edit / Get YAML
+              <Edit2 size={16} />
+              Edit / Get YAML
             </button>
           </div>
         </footer>

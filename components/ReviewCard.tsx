@@ -1,7 +1,7 @@
 import React from 'react';
 import { MediaReview, MediaType } from '../types';
 import { StarRating } from './StarRating';
-import { Film, Tv, Book, Music, Edit2, ExternalLink } from 'lucide-react';
+import { Film, Tv, Book, Music } from 'lucide-react';
 
 interface ReviewCardProps {
   review: MediaReview;
@@ -10,94 +10,58 @@ interface ReviewCardProps {
   onView: (id: string) => void;
 }
 
-const TypeIcon: React.FC<{ type: MediaType }> = ({ type }) => {
+const TypeIcon: React.FC<{ type: MediaType; size?: number }> = ({ type, size = 16 }) => {
   switch (type) {
-    case MediaType.Movie: return <Film size={16} className="text-blue-500" />;
-    case MediaType.TV: return <Tv size={16} className="text-purple-500" />;
-    case MediaType.Book: return <Book size={16} className="text-green-500" />;
-    case MediaType.Music: return <Music size={16} className="text-pink-500" />;
-    default: return <Film size={16} />;
+    case MediaType.Movie: return <Film size={size} className="text-blue-500" />;
+    case MediaType.TV: return <Tv size={size} className="text-purple-500" />;
+    case MediaType.Book: return <Book size={size} className="text-green-500" />;
+    case MediaType.Music: return <Music size={size} className="text-pink-500" />;
+    default: return <Film size={size} />;
   }
 };
 
-export const ReviewCard: React.FC<ReviewCardProps> = ({ review, onEdit, onView }) => {
-  
+export const ReviewCard: React.FC<ReviewCardProps> = ({ review, onView }) => {
+
   const formattedDate = new Date(review.reviewDate).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
   });
 
-  const words = review.text.split(/\s+/);
-  const isLongReview = words.length > 80;
-  const displayedText = !isLongReview 
-    ? review.text 
-    : words.slice(0, 80).join(' ') + '...';
 
   return (
-    <article className="group relative border-b border-border pb-10 mb-8 last:border-0 last:mb-0 transition-all hover:bg-surface/50 -mx-4 px-4 rounded-xl py-4">
-      
-      {/* Meta Header */}
-      <div className="flex items-center justify-between mb-3">
-         <div className="flex items-center gap-3">
-            <span className="flex items-center gap-1.5 text-xs font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-full transition-colors">
-                <TypeIcon type={review.type} />
-                {review.type}
-            </span>
-            <span className="text-xs text-muted font-mono">
-                {formattedDate}
-            </span>
-         </div>
-      </div>
+    <article className="group relative border-b border-border/50 pb-2 mb-2 last:border-0 last:mb-0 transition-all hover:bg-surface/50 -mx-4 px-4 rounded-lg py-1.5">
 
-      {/* Main Content */}
-      <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-3">
-        <div className="flex-grow">
-           <h2 
-             onClick={() => onView(review.id)}
-             className="text-2xl font-bold text-body leading-tight mb-1 cursor-pointer hover:text-primary transition-colors inline-flex items-center gap-2 group/title"
-           >
-             {review.title}
-             <ExternalLink size={16} className="opacity-0 group-hover/title:opacity-100 transition-opacity text-muted" />
-           </h2>
-           <div className="flex items-center gap-2 text-sm text-muted">
-             {(review.type === MediaType.Book || review.type === MediaType.Music) && review.author && (
-                <>
-                  <span className="font-medium text-body/80">{review.author}</span>
-                  <span className="text-muted/50">•</span>
-                </>
-             )}
-             <span>{review.releaseYear}</span>
-           </div>
-        </div>
-        
-        <div className="flex-shrink-0">
-           <StarRating rating={review.rating} readOnly size={20} />
-        </div>
-      </div>
-
-      {/* Review Body */}
-      <div className="prose prose-sm max-w-none text-body/80 leading-relaxed mb-4">
-        <p className="whitespace-pre-line">{displayedText}</p>
-      </div>
-
-      {/* Actions */}
-      <div className="flex items-center justify-between pt-2">
-        <button 
-           onClick={() => onView(review.id)}
-           className="text-primary hover:opacity-80 text-sm font-medium hover:underline"
+      {/* Main Row: Title, Author, and Rating */}
+      <div className="flex items-baseline justify-between gap-4">
+        <div
+          onClick={() => onView(review.id)}
+          className="cursor-pointer group/title flex items-baseline gap-1.5 overflow-hidden flex-grow"
         >
-           {isLongReview ? "Read full review" : "View details"}
-        </button>
+          <h2 className="text-lg font-bold text-body leading-none hover:text-primary transition-colors flex items-center flex-wrap gap-x-2 py-0.5">
+            <span className="inline-flex items-center shrink-0">
+              <TypeIcon type={review.type} size={14} />
+            </span>
+            <span className="truncate max-w-[200px] sm:max-w-none">
+              {review.title}
+            </span>
+            {(review.author || review.releaseYear) && (
+              <span className="text-muted/80 font-medium text-sm self-center translate-y-[0.5px] flex items-center gap-1.5">
+                {review.author && <span className="truncate opacity-80 group-hover/title:text-body transition-colors">by {review.author}</span>}
+                {review.releaseYear && <span>({review.releaseYear})</span>}
+              </span>
+            )}
+          </h2>
+        </div>
 
-        <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-             <button 
-                onClick={() => onEdit(review.id)}
-                className="p-2 text-muted hover:text-body hover:bg-input rounded-lg transition-colors flex items-center gap-2"
-                title="Edit / Generate YAML"
-            >
-                <Edit2 size={16} />
-            </button>
+        <div className="flex-shrink-0 flex flex-col items-end pt-0.5">
+          <div className="flex items-center gap-2">
+            <StarRating rating={review.rating} readOnly size={16} />
+            <span className="text-sm font-bold text-body/90 tabular-nums">{review.rating}<span className="text-muted/60 font-medium">/5</span></span>
+          </div>
+          <div className="text-[12px] text-muted/60 mt-0.5">
+            Reviewed {formattedDate}
+          </div>
         </div>
       </div>
     </article>

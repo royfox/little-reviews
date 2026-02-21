@@ -42,7 +42,7 @@ export const StarRating: React.FC<StarRatingProps> = ({
       {Array.from({ length: maxRating }, (_, i) => i + 1).map((starIndex) => {
         const isFull = displayRating >= starIndex;
         const isHalf = displayRating >= starIndex - 0.5 && !isFull;
-        
+
         return (
           <button
             key={starIndex}
@@ -54,11 +54,11 @@ export const StarRating: React.FC<StarRatingProps> = ({
           >
             <div className="relative">
               {/* Background Star (Empty) */}
-              <Star 
-                size={size} 
-                className="text-slate-300 dark:text-slate-700 fill-slate-200 dark:fill-slate-800"
+              <Star
+                size={size}
+                className="text-border fill-border"
               />
-              
+
               {/* Foreground Star (Filled or Half) */}
               <div className="absolute top-0 left-0 overflow-hidden text-yellow-400">
                 {isFull && <Star size={size} className="fill-yellow-400" />}

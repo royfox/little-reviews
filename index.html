@@ -11,7 +11,6 @@
     rel="stylesheet">
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
           fontFamily: {
@@ -20,56 +19,22 @@
           colors: {
             primary: '#6366f1', // Indigo 500
             secondary: '#ec4899', // Pink 500
-            // Semantic colors using CSS variables
-            background: 'rgba(var(--background), <alpha-value>)',
-            surface: 'rgba(var(--surface), <alpha-value>)',
-            body: 'rgba(var(--text-body), <alpha-value>)',
-            muted: 'rgba(var(--text-muted), <alpha-value>)',
-            border: 'rgba(var(--border), <alpha-value>)',
-            input: 'rgba(var(--input-bg), <alpha-value>)',
+            background: '#f8fafc', // slate-50
+            surface: '#ffffff', // white
+            body: '#0f172a', // slate-900
+            muted: '#64748b', // slate-500
+            border: '#e2e8f0', // slate-200
+            input: '#f1f5f9', // slate-100
           }
         }
       }
     }
   </script>
   <style>
-    :root {
-      /* Light Mode Defaults (Slate 50 based) */
-      --background: 248, 250, 252;
-      /* slate-50 */
-      --surface: 255, 255, 255;
-      /* white */
-      --text-body: 15, 23, 42;
-      /* slate-900 */
-      --text-muted: 100, 116, 139;
-      /* slate-500 */
-      --border: 226, 232, 240;
-      /* slate-200 */
-      --input-bg: 241, 245, 249;
-      /* slate-100 */
-    }
-
-    .dark {
-      /* Dark Mode Defaults (Slate 900 based) */
-      --background: 15, 23, 42;
-      /* slate-900 */
-      --surface: 30, 41, 59;
-      /* slate-800 */
-      --text-body: 226, 232, 240;
-      /* slate-200 */
-      --text-muted: 148, 163, 184;
-      /* slate-400 */
-      --border: 51, 65, 85;
-      /* slate-700 */
-      --input-bg: 15, 23, 42;
-      /* slate-900 */
-    }
-
     body {
-      background-color: rgba(var(--background), 1);
-      color: rgba(var(--text-body), 1);
+      background-color: #f8fafc;
+      color: #0f172a;
       overflow-x: hidden;
-      transition: background-color 0.3s, color 0.3s;
     }
 
     /* Custom scrollbar for webkit */
@@ -124,14 +89,6 @@
 <body>
   <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
-  <script>
-    // Initialize theme to prevent flash
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-  </script>
 </body>
 
 </html>

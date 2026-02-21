@@ -1,4 +1,4 @@
-# Little Reviews
+# The Recall
 
 A static, file-based React application for rating and reviewing media. Reviews are stored as YAML files and compiled into a JSON api for the frontend.
 

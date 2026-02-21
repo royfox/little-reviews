@@ -175,7 +175,7 @@ function App() {
               className="flex items-center gap-1 group transition-opacity hover:opacity-90"
             >
               <h1 className="text-lg font-bold tracking-tight text-body">
-                Little Reviews
+                The Recall
               </h1>
             </button>
 

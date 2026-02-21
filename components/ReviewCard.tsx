@@ -22,13 +22,6 @@ const TypeIcon: React.FC<{ type: MediaType; size?: number }> = ({ type, size = 1
 
 export const ReviewCard: React.FC<ReviewCardProps> = ({ review, onView }) => {
 
-  const formattedDate = new Date(review.reviewDate).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  });
-
-
   return (
     <article className="group relative border-b border-border/50 pb-2 mb-2 last:border-0 last:mb-0 transition-all hover:bg-surface/50 -mx-4 px-4 rounded-lg py-1.5">
 
@@ -58,9 +51,6 @@ export const ReviewCard: React.FC<ReviewCardProps> = ({ review, onView }) => {
           <div className="flex items-center gap-2">
             <StarRating rating={review.rating} readOnly size={16} />
             <span className="text-sm font-bold text-body/90 tabular-nums">{review.rating}<span className="text-muted/60 font-medium">/5</span></span>
-          </div>
-          <div className="text-[12px] text-muted/60 mt-0.5">
-            Reviewed {formattedDate}
           </div>
         </div>
       </div>

@@ -1,12 +1,33 @@
 [
   {
+    "title": "The Postman Always Rings Twice",
+    "type": "Book",
+    "author": "James M. Cain",
+    "rating": 4,
+    "releaseYear": 1934,
+    "reviewDate": "2026-02-03T21:30:38.533Z",
+    "text": "A very short book! It gets an extra star just for that. I like the prose, it's snappy, so there's a decent amount of plot in 122 pages. It doesn't really read like a book that's nearly 100 years old. I suppose in a way it's a love story about two broken people, but there's also lots of murderous noir shenanigans. The narrator's perspective is quite fun, he's telling his own story and probably thinks he's been hard done by in all this, but over time just reveals that he's actually a bit of an idiot (it was funny how the amateurish murder plot was immediately rumbled by the police, albeit that a lawyer managed to get him off because he was able to do a deal with the insurance companies that the police were relying on for their evidence - one bit that did make the book seem from a bygone age). \n",
+    "id": "the-postman-always-rings-twice"
+  },
+  {
+    "title": "No Country For Old Men ",
+    "type": "Book",
+    "author": "Cormac McCarthy",
+    "rating": 4,
+    "releaseYear": 2005,
+    "reviewDate": "2026-02-03T20:51:33.178Z",
+    "text": "The first Cormac McCarthy book I've read. It's very similar to the movie, which lessens the suspense a bit if you've seen the movie, all the major plot points are the same (even the fact that Moss is killed off-screen, or off-page). That makes it a bit hard to form a fresh opinion about the book, and probably also meant I speed read it a bit and missed some of the subtlety of the book. So I liked the book, but that might be partly because I like the film. \n\nIt's hard not to comment on the style of the prose, quite minimalist, almost like a screenplay at times, and hardly any punctuation (which I mostly don't mind, although it still the missing apostrophe in words like dont and cant looked weird to me every time). There are also these injections/introspections from the Sheriff periodically, a couple of pages in italics each time. They were a bit of a slog and I pretty much gave up on them half-way through the book.  \n",
+    "id": "no-country-for-old-men"
+  },
+  {
     "title": "How Have You Been?",
     "type": "Music",
     "author": "Giant Rooks?",
     "rating": 3.5,
     "releaseYear": 2024,
     "reviewDate": "2026-01-19T22:05:24.371Z",
-    "text": "So here is a record that sounds like an English band playing festival-friendly indie-rock from sometime around the year 2010. It turns out it’s actually a record from a German band in 2024. I mean, if you listen to the vocal at the start of Pink Skies I feel like you could almost start to make educated guesses about exactly which part of England the singer is from. I can easily imagine this music in a Radio 1 playlist (that is, if they still play indie music on Radio 1, I don’t know, I’m too old for that these days). \n\nThe sound of this album reminds me of something, a band or album that I can’t quite place – maybe some combination of Everything Everything, Bastille, Foals, Two Door Cinema Club, The Kooks, The Vaccines or The Walkmen (if you’ve even seen that old tweet “Dudes can literally just sit around and name old sports players and just have the best time”, this is that but for indie bands). None of those are right but you get the idea. \n\nThere are a few quite catchy songs here, I quite like the vibe, and I do kinda find myself singing along here and there. I mean, it’s maybe a little poppy for my taste overall, and I doubt it will survive in my rotation. For me perhaps we’re more at the level of “add a couple of their best songs to a playlist” rather than “listen to the whole album all the way through”.  It’s quite funny that when I was looking for more info about the band, I discovered that a lot of their older fans seem to hate this album, and think they’ve sold out – longtime fans of a band obviously come to an album with a different expectation to someone like me who only just heard of them for the first time. \"Painfully generic\", says one. An \"unrecognizable blop of indie cliches\", says another. A bit harsh. \n",
+    "updatedDate": "2026-02-03T20:24:36.026Z",
+    "text": "A German band, sounds like a British Indie band from 2010. I can't quite place what it reminds me of – maybe some combination of Everything Everything, Bastille, Foals, Two Door Cinema Club, The Kooks, The Vaccines, The Walkmen.\n",
     "id": "how-have-you-been"
   },
   {
@@ -15,8 +36,8 @@
     "rating": 3,
     "releaseYear": 2026,
     "reviewDate": "2026-01-19T08:42:33.471Z",
-    "updatedDate": "2026-01-19T20:45:29.775Z",
-    "text": "This is a movie about a police narcotics unit who find $20m of drug money hidden in a wall. But are some of them trying to steal it? \n\nThe start was a bit disjointed as it tries to introduce all the characters all at once, but once they stumbled upon that $20m in cash the film settled into a decent rhythm. There was some tension, it was engaging. That suspense kinda fell away though as the movie went on, not least because all the twists were fairly bluntly given away well in advance. When they finally got to what I assume was supposed to be the shocking big reveal, it didn't land because nothing about it was surprising at all. The movie then finished with half an hour of fairly boring action. I don't know if I didn't like the way the climactic chase was filmed (fast cutting, hard to follow), or if I'd just lost interest in the outcome by that point. But the final act didn't work for me. I also have some gripes about the aesthetic - surely this movie needed something a bit more realistic and grittier, rather than this orange/teal colour grade and hyperreal vibe. \n\nDidn't hate it, won't remember it. \n",
+    "updatedDate": "2026-02-01T10:15:41.456Z",
+    "text": "This is a movie about a police unit who find $20m of drug money hidden in a wall. It's... fine? Didn't hate it, won't remember it. \n\nThere film settled into a decent rhythm in the second act. There was some tension. But the suspense fell away though as the movie went on. The \"whodunnit\" element was given away well in advance, there were so many unsubtle clues, but when they got to the big reveal, it seemed like we were meant to be surprised by it? Maybe this is one of those films where they assume everyone on streaming isn't really paying attention. Subtle it was not. \n\nThe final act didn't work for me. I don't know if I didn't like the way the climactic chase was filmed (fast cutting, hard to follow), or if I'd just lost interest in the outcome by that point.\n\nA final nit about the aesthetic - surely this movie needed something more realistic and grittier, rather than this orange/teal colour grade and hyperreal vibe. \n",
     "id": "the-rip"
   },
   {
@@ -35,7 +56,8 @@
     "rating": 3.5,
     "releaseYear": 2025,
     "reviewDate": "2026-01-08T20:22:33.856Z",
-    "text": "I enjoyed this film, so it was funny to see afterwards that some people absolutely hated it. I found a Reddit thread about the film that was nothing but negativity, and when they pointed out all these plot holes, I was like \"well, now you mention it, that was a bit silly\". Sometimes I find you can take against a movie for whatever reason, and from then on every nonsensical thing a character will stick out like a sore thumb and annoy the hell out of you. But sometimes you seem to just roll with a movie, and the plot holes don't seem to bother you. For me this film stayed on the right side of that line. It was fun, I was willing to forgive the implausible moments. There's some action, some moral dilemmas, some good performances. I quite liked it. \n\nI'm not sure it was quite good enough to really stay with me though, apart from perhaps some of the music. The music is such an integral part of a lot of Spike Lee movies, and there's one particularly esoteric choice in this movie, which was to use a kind of slightly jazzy folk piece in a lot of the key moments (the main cue is Stony Gate 2, which is a more cinematic version of Stony Gate by Fergus McCreadie - the music was striking enough that I whipped out Shazam at the time to find out what it was). I thought that music worked great - it's propulsive, it's got the simplicity and repetition of folk music but also is also jazzy enough to have a certain je ne sais quoi and keep you on your toes. Those people on Reddit absolutely savaged that particular bit of a music - but as we've established they'd already taken against the film for some reason. But I was still on board. That music was distinctive enough that I think if I ever hear it again it will always remind me of this film (a bit like how \"Chaiyya Chaiyya\" will always make me think of Inside Man). \n",
+    "updatedDate": "2026-02-01T10:06:00.486Z",
+    "text": "I enjoyed this film, so it was funny to see afterwards that some people absolutely hated it. I found a Reddit thread about the film that was nothing but negativity, and when they pointed out all these plot holes, I was like \"well, now you mention it, that was a bit silly\". Sometimes I find you can take against a movie for whatever reason, and from then on every nonsensical thing a character will stick out like a sore thumb and annoy the hell out of you. But sometimes you seem to just roll with a movie, and the plot holes don't seem to bother you. For me this film stayed on the right side of that line, I was willing to forgive the implausible moments. There's some action, some moral dilemmas, some good performances. I quite liked it. \n\nThe thing I remember about it most though will probably be some of the music. There's one particularly interesting choice in this movie, which was to use a kind of slightly jazzy folk piece in a lot of the key moments (the main cue is Stony Gate 2, which is a more cinematic version of Stony Gate by Fergus McCreadie - the music was striking enough that I whipped out Shazam at the time to find out what it was). That was an unconventional choice but I thought it really worked - it's propulsive, it's got the simplicity and repetition of folk music, but also a little jazzy edge that suits that moment in the movie. \n",
     "id": "highest-2-lowest"
   },
   {
@@ -45,7 +67,8 @@
     "rating": 3.5,
     "releaseYear": 2025,
     "reviewDate": "2026-01-07T22:38:45.164Z",
-    "text": "I love the sound of this record, it’s just a lovely vibe. It breezes along, it sets the mood. There’s an article by the producers in Sound on sound, and mix engineer Charlie Holmes says “When working on Olivia’s record, she said, ‘I want it to sound like a warm hug all the time.’”. I think they achieved that.\n\nIt’s more of a background vibe for me though. Even after a few playthroughs I can’t remember most of the songs (apart from Man I Need, of course, which is obviously a banger). “The Art of Loving is, in all sincerity, a perfect album to cook or clean to.”, say Pitchfork, which is probably where I’m at too. I find myself wanting to know how they produced it, how they made this open and naturalistic sound and arrangements that suits her voice so well. But when the album is finished playing I can’t really remember too much else about it, other than that I enjoyed having it on. Perhaps a few more risks and experiments would help, something to give it a bit more edge for me latch on to. But then, of course, it might not be the warm hug that it is.\n",
+    "updatedDate": "2026-02-01T09:55:37.004Z",
+    "text": "There's a lovely vibe to this album, it breezes along, it sets the mood. There’s an article by the producers in Sound on sound, and mix engineer Charlie Holmes says “When working on Olivia’s record, she said, ‘I want it to sound like a warm hug all the time.’”.\n\nThat said, it doesn't stick with me - “The Art of Loving is, in all sincerity\", say Pitchfork \"a perfect album to cook or clean to.\" The production is lovely, poppy yet naturalistic. Perhaps a few more risks and experiments would help, something to give it a bit more edge to latch on to. But then I suppose it might not be the warm hug that it is.\n",
     "id": "the-art-of-loving"
   }
 ]

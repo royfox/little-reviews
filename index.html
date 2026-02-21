@@ -1,86 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Little Reviews</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-            colors: {
-              primary: '#6366f1', // Indigo 500
-              secondary: '#ec4899', // Pink 500
-              // Semantic colors using CSS variables
-              background: 'rgb(var(--background) / <alpha-value>)',
-              surface: 'rgb(var(--surface) / <alpha-value>)',
-              body: 'rgb(var(--text-body) / <alpha-value>)',
-              muted: 'rgb(var(--text-muted) / <alpha-value>)',
-              border: 'rgb(var(--border) / <alpha-value>)',
-              input: 'rgb(var(--input-bg) / <alpha-value>)',
-            }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Reviews</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Lora', 'serif'],
+          },
+          colors: {
+            primary: '#6366f1', // Indigo 500
+            secondary: '#ec4899', // Pink 500
+            // Semantic colors using CSS variables
+            background: 'rgb(var(--background) / <alpha-value>)',
+            surface: 'rgb(var(--surface) / <alpha-value>)',
+            body: 'rgb(var(--text-body) / <alpha-value>)',
+            muted: 'rgb(var(--text-muted) / <alpha-value>)',
+            border: 'rgb(var(--border) / <alpha-value>)',
+            input: 'rgb(var(--input-bg) / <alpha-value>)',
           }
         }
       }
-    </script>
-    <style>
-      :root {
-        /* Light Mode Defaults (Slate 50 based) */
-        --background: 248 250 252; /* slate-50 */
-        --surface: 255 255 255; /* white */
-        --text-body: 15 23 42; /* slate-900 */
-        --text-muted: 100 116 139; /* slate-500 */
-        --border: 226 232 240; /* slate-200 */
-        --input-bg: 241 245 249; /* slate-100 */
-      }
+    }
+  </script>
+  <style>
+    :root {
+      /* Light Mode Defaults (Slate 50 based) */
+      --background: 248 250 252;
+      /* slate-50 */
+      --surface: 255 255 255;
+      /* white */
+      --text-body: 15 23 42;
+      /* slate-900 */
+      --text-muted: 100 116 139;
+      /* slate-500 */
+      --border: 226 232 240;
+      /* slate-200 */
+      --input-bg: 241 245 249;
+      /* slate-100 */
+    }
 
-      .dark {
-        /* Dark Mode Defaults (Slate 900 based) */
-        --background: 15 23 42; /* slate-900 */
-        --surface: 30 41 59; /* slate-800 */
-        --text-body: 226 232 240; /* slate-200 */
-        --text-muted: 148 163 184; /* slate-400 */
-        --border: 51 65 85; /* slate-700 */
-        --input-bg: 15 23 42; /* slate-900 */
-      }
+    .dark {
+      /* Dark Mode Defaults (Slate 900 based) */
+      --background: 15 23 42;
+      /* slate-900 */
+      --surface: 30 41 59;
+      /* slate-800 */
+      --text-body: 226 232 240;
+      /* slate-200 */
+      --text-muted: 148 163 184;
+      /* slate-400 */
+      --border: 51 65 85;
+      /* slate-700 */
+      --input-bg: 15 23 42;
+      /* slate-900 */
+    }
 
-      body {
-        background-color: rgb(var(--background));
-        color: rgb(var(--text-body));
-        overflow-x: hidden;
-        transition: background-color 0.3s, color 0.3s;
-      }
-      
-      /* Custom scrollbar for webkit */
-      ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: transparent; 
-      }
-      ::-webkit-scrollbar-thumb {
-        background: rgb(var(--text-muted) / 0.3); 
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: rgb(var(--text-muted) / 0.5); 
-      }
+    body {
+      background-color: rgb(var(--background));
+      color: rgb(var(--text-body));
+      overflow-x: hidden;
+      transition: background-color 0.3s, color 0.3s;
+    }
 
-      .no-scrollbar::-webkit-scrollbar {
-        display: none;
-      }
-      .no-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-    </style>
+    /* Custom scrollbar for webkit */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgb(var(--text-muted) / 0.3);
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgb(var(--text-muted) / 0.5);
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
   <script type="importmap">
 {
   "imports": {
@@ -99,18 +118,20 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/index.css">
 </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-    <script>
-      // Initialize theme to prevent flash
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark')
-      } else {
-        document.documentElement.classList.remove('dark')
-      }
-    </script>
-  </body>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+  <script>
+    // Initialize theme to prevent flash
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+</body>
+
 </html>

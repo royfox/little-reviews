@@ -1,7 +1,7 @@
 import React from 'react';
 import { MediaReview, MediaType } from '../types';
 import { StarRating } from './StarRating';
-import { Film, Tv, Book, Music, ArrowLeft, Calendar, Edit2 } from 'lucide-react';
+import { Film, Tv, BookOpen, Music, ArrowLeft, Calendar, Edit2 } from 'lucide-react';
 
 interface ReviewDetailProps {
   review: MediaReview;
@@ -12,11 +12,11 @@ interface ReviewDetailProps {
 
 const TypeIcon: React.FC<{ type: MediaType }> = ({ type }) => {
   switch (type) {
-    case MediaType.Movie: return <Film size={18} className="text-blue-500" />;
-    case MediaType.TV: return <Tv size={18} className="text-purple-500" />;
-    case MediaType.Book: return <Book size={18} className="text-green-500" />;
-    case MediaType.Music: return <Music size={18} className="text-pink-500" />;
-    default: return <Film size={18} />;
+    case MediaType.Movie: return <Film size={18} className="text-body" />;
+    case MediaType.TV: return <Tv size={18} className="text-body" />;
+    case MediaType.Book: return <BookOpen size={18} className="text-body" />;
+    case MediaType.Music: return <Music size={18} className="text-body" />;
+    default: return <Film size={18} className="text-body" />;
   }
 };
 
@@ -37,7 +37,7 @@ export const ReviewDetail: React.FC<ReviewDetailProps> = ({ review, onBack, onEd
     : null;
 
   return (
-    <div>
+    <div className="max-w-[600px] mx-auto">
       <button
         onClick={onBack}
         className="mb-6 flex items-center gap-2 text-muted hover:text-body transition-colors group"
@@ -50,13 +50,13 @@ export const ReviewDetail: React.FC<ReviewDetailProps> = ({ review, onBack, onEd
 
         {/* Header Section */}
         <header className="mb-8 relative z-10">
-          <h1 className="text-2xl md:text-3xl font-bold text-body leading-tight mb-2 flex items-center flex-wrap gap-x-3">
+          <h1 className="text-xl md:text-2xl font-bold text-body leading-snug mb-2 flex items-center flex-wrap gap-x-3 pb-1">
             <span className="inline-flex items-center shrink-0">
               <TypeIcon type={review.type} />
             </span>
             <span>{review.title}</span>
             {(review.author || review.releaseYear) && (
-              <span className="text-muted/60 font-normal text-xl md:text-2xl flex items-center gap-1.5 self-center translate-y-[1px]">
+              <span className="text-muted/60 font-normal text-lg md:text-xl flex items-center gap-1.5 self-center translate-y-[1px]">
                 {review.author && <span>by {review.author}</span>}
                 {review.releaseYear && <span>({review.releaseYear})</span>}
               </span>
@@ -65,13 +65,15 @@ export const ReviewDetail: React.FC<ReviewDetailProps> = ({ review, onBack, onEd
 
           <div className="flex items-center gap-4 border-y border-border/50 py-3">
             <StarRating rating={review.rating} readOnly size={20} />
-            <span className="text-xl font-bold text-yellow-500">{review.rating}</span>
-            <span className="text-muted text-xs uppercase tracking-wide">/ 5</span>
+            <div>
+              <span className="text-xl font-bold text-yellow-500 tabular-nums">{review.rating}</span>
+              <span className="text-xl font-bold text-muted opacity-30">/5</span>
+            </div>
           </div>
         </header>
 
         {/* Body */}
-        <div className="prose prose-lg max-w-none text-body leading-relaxed whitespace-pre-line mb-8">
+        <div className="prose prose-base max-w-none text-body leading-relaxed whitespace-pre-line mb-8">
           {review.text}
         </div>
 

@@ -4,7 +4,7 @@ import { ReviewForm } from './components/ReviewForm';
 import { ReviewCard } from './components/ReviewCard';
 import { ReviewDetail } from './components/ReviewDetail';
 import * as contentService from './services/content';
-import { Plus, Search, Film, Music, Tv, Book, SlidersHorizontal, ArrowUp, ArrowDown, ChevronDown, Check } from 'lucide-react';
+import { Plus, Search, Film, Music, Tv, BookOpen, SlidersHorizontal, ArrowUp, ArrowDown, ChevronDown, Check } from 'lucide-react';
 
 type SortOption = 'reviewDate' | 'releaseYear' | 'rating';
 type SortDirection = 'asc' | 'desc';
@@ -326,7 +326,7 @@ function App() {
                         >
                           {type === MediaType.Movie && <Film size={14} />}
                           {type === MediaType.TV && <Tv size={14} />}
-                          {type === MediaType.Book && <Book size={14} />}
+                          {type === MediaType.Book && <BookOpen size={14} />}
                           {type === MediaType.Music && <Music size={14} />}
                           {type}
                         </button>

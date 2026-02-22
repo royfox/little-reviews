@@ -73,8 +73,12 @@ export const ReviewDetail: React.FC<ReviewDetailProps> = ({ review, onBack, onEd
         </header>
 
         {/* Body */}
-        <div className="prose prose-base max-w-none text-body leading-relaxed whitespace-pre-line mb-8">
-          {review.text}
+        <div className="prose prose-base max-w-none text-body leading-relaxed mb-8">
+          <ul className="list-disc pl-5 space-y-4">
+            {review.text.map((paragraph, index) => (
+              <li key={index} className="whitespace-pre-line">{paragraph}</li>
+            ))}
+          </ul>
         </div>
 
         {/* Footer */}

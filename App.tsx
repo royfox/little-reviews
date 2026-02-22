@@ -94,9 +94,12 @@ function App() {
     contentService.downloadReviewYaml(newOrUpdatedReview);
     alert("Review YAML downloaded! Please move this file to 'content/reviews/' and run the build script.");
 
-    updateUrl(null);
-    setView('list');
-    setActiveReviewId(null);
+    const isEditing = activeReviewId && view === 'form';
+    if (!isEditing) {
+      updateUrl(null);
+      setView('list');
+      setActiveReviewId(null);
+    }
   };
 
   const handleDeleteReview = (_id: string) => {
@@ -174,7 +177,7 @@ function App() {
               }}
               className="flex items-center gap-1 group transition-opacity hover:opacity-90"
             >
-              <h1 className="text-lg font-bold tracking-tight text-body">
+              <h1 className="text-2xl font-black tracking-tighter text-body font-logo italic">
                 The Recall
               </h1>
             </button>

@@ -31,16 +31,16 @@ export const ReviewCard: React.FC<ReviewCardProps> = ({ review, onView }) => {
           onClick={() => onView(review.id)}
           className="cursor-pointer group/title flex items-baseline gap-1.5 overflow-hidden flex-grow"
         >
-          <h2 className="text-xl font-bold text-body leading-snug hover:text-blue-600 transition-colors flex items-center flex-wrap gap-x-2 py-0.5 pb-1">
-            <span className="inline-flex items-center shrink-0">
+          <h2 className="text-xl font-bold text-body leading-snug hover:text-blue-600 transition-colors py-0.5 pb-1">
+            <span className="inline-block mr-2 align-middle relative -top-[1px]">
               <TypeIcon type={review.type} size={16} />
             </span>
-            <span className="truncate max-w-[200px] sm:max-w-none">
+            <span className="break-words">
               {review.title}
             </span>
             {(review.author || review.releaseYear) && (
-              <span className="text-muted/80 font-medium text-base self-center translate-y-[0.5px] flex items-center gap-1.5">
-                {review.author && <span className="truncate opacity-80 group-hover/title:text-blue-600 transition-colors">by {review.author}</span>}
+              <span className="text-muted/80 font-medium text-base ml-2 inline-flex items-center gap-1.5 align-middle relative -top-[1px]">
+                {review.author && <span className="opacity-80 group-hover/title:text-blue-600 transition-colors">by {review.author}</span>}
                 {review.releaseYear && <span>({review.releaseYear})</span>}
               </span>
             )}

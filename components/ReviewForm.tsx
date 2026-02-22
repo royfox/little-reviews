@@ -15,7 +15,12 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ initialData, onSave, onC
   const [author, setAuthor] = useState(initialData?.author || '');
   const [year, setYear] = useState<number>(initialData?.releaseYear || new Date().getFullYear());
   const [rating, setRating] = useState(initialData?.rating || 0);
-  const [text, setText] = useState(initialData?.text || '');
+  const formatTextAsBullets = (textArray?: string[]): string => {
+    if (!textArray || textArray.length === 0) return '';
+    return textArray.map(t => `- ${t}`).join('\n\n');
+  };
+
+  const [text, setText] = useState(formatTextAsBullets(initialData?.text));
 
   const needsAuthor = type === MediaType.Book || type === MediaType.Music;
   const isEditing = !!initialData;
@@ -28,7 +33,9 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ initialData, onSave, onC
       author: needsAuthor ? author : undefined,
       releaseYear: year,
       rating: rating || 0,
-      text,
+      text: text.split(/(?:^|\n)\s*-\s+/)
+        .map(s => s.trim())
+        .filter(s => s.length > 0),
     });
   };
 
@@ -57,8 +64,8 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ initialData, onSave, onC
               type="button"
               onClick={() => setType(t)}
               className={`py-2 px-3 rounded-lg text-sm font-medium transition-all ${type === t
-                  ? 'bg-primary text-white shadow-lg shadow-primary/25'
-                  : 'bg-input text-muted hover:bg-border'
+                ? 'bg-primary text-white shadow-lg shadow-primary/25'
+                : 'bg-input text-muted hover:bg-border'
                 }`}
             >
               {t}

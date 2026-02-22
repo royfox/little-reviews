@@ -1,12 +1,45 @@
 [
   {
+    "title": "F1",
+    "type": "Movie",
+    "rating": 2.5,
+    "releaseYear": 2025,
+    "reviewDate": "2026-02-22T09:31:53.430Z",
+    "text": [
+      "It's a modern big budget action movie in a nutshell, it's very slick and completely forgettable. You aren't bored when it's on, but you can't remember a thing about it a week later.\n",
+      "The plot actually almost feels like a satire on F1, with drivers completely relying on safety cars and red flags for any actual jeopardy.\n",
+      "The plot of the movie is that a terrible team with no points at all in the first half of the season needs to win a race in the second half of the season to save the team. I'm not the biggest F1 fan but that seems a laughably unrealistic goal, so if that's the setup, you have no choice but to fill the movie with a load of nonsense in order to achieve it.\n",
+      "I did like the music though.\n"
+    ],
+    "id": "f1"
+  },
+  {
+    "title": "Drive",
+    "type": "Book",
+    "author": "James Sallis ",
+    "rating": 2.5,
+    "releaseYear": 2005,
+    "reviewDate": "2026-02-22T09:16:41.345Z",
+    "text": [
+      "Loved the movie but I didn't take to the book. It's very short, if it was much longer I would have given up on it.\n",
+      "It's told in a non-linear way, and it's very possible I missed some things in the early part of the book that led to me losing touch with it later on. I'd have to re-read it to give a really fair assessment of the book. I'll probably never bother though.\n"
+    ],
+    "id": "drive"
+  },
+  {
     "title": "The Postman Always Rings Twice",
     "type": "Book",
     "author": "James M. Cain",
     "rating": 4,
     "releaseYear": 1934,
     "reviewDate": "2026-02-03T21:30:38.533Z",
-    "text": "A very short book! It gets an extra star just for that. I like the prose, it's snappy, so there's a decent amount of plot in 122 pages. It doesn't really read like a book that's nearly 100 years old. I suppose in a way it's a love story about two broken people, but there's also lots of murderous noir shenanigans. The narrator's perspective is quite fun, he's telling his own story and probably thinks he's been hard done by in all this, but over time just reveals that he's actually a bit of an idiot (it was funny how the amateurish murder plot was immediately rumbled by the police, albeit that a lawyer managed to get him off because he was able to do a deal with the insurance companies that the police were relying on for their evidence - one bit that did make the book seem from a bygone age). \n",
+    "updatedDate": "2026-02-22T08:56:09.798Z",
+    "text": [
+      "A very short book! It gets an extra star just for that.\n",
+      "I like the prose, it's snappy, so there's a decent amount of plot in 122 pages.\n",
+      "It doesn't come across like a book that's nearly 100 years old. The prose is easy to read, and you can empathise with the characters (violence and murderous shenanigans notwithstanding), they don't seem like characters from a distant past. You could set a version of this story in the modern day without needing to change much at all about the plot (the one exception being that a lawyer was able to get someone off a murder charge by doing a deal with the insurance companies that the police were relying on for their evidence).\n",
+      "It was pretty funny how a carefully plotted but very amateurish murder plot was immediately rumbled by the police, the narrator is not as smart as he thinks he is.\n"
+    ],
     "id": "the-postman-always-rings-twice"
   },
   {
@@ -16,18 +49,30 @@
     "rating": 4,
     "releaseYear": 2005,
     "reviewDate": "2026-02-03T20:51:33.178Z",
-    "text": "The first Cormac McCarthy book I've read. It's very similar to the movie, which lessens the suspense a bit if you've seen the movie, all the major plot points are the same (even the fact that Moss is killed off-screen, or off-page). That makes it a bit hard to form a fresh opinion about the book, and probably also meant I speed read it a bit and missed some of the subtlety of the book. So I liked the book, but that might be partly because I like the film. \n\nIt's hard not to comment on the style of the prose, quite minimalist, almost like a screenplay at times, and hardly any punctuation (which I mostly don't mind, although it still the missing apostrophe in words like dont and cant looked weird to me every time). There are also these injections/introspections from the Sheriff periodically, a couple of pages in italics each time. They were a bit of a slog and I pretty much gave up on them half-way through the book.  \n",
+    "updatedDate": "2026-02-22T08:42:23.770Z",
+    "text": [
+      "My first Cormac McCarthy book.\n",
+      "The plot is very very similar to the movie, there are subtle character difference but pretty much all the major plot points are the same (even the fact that Moss is killed off-screen, or off-page).\n",
+      "I maybe speed read it a bit and missed some of the subtlety of the book, because I already knew what was going to happen from the film. So I liked the book, but that might be partly because I like the film.\n",
+      "The prose is quite minimalist, almost like a screenplay at times, and hardly any punctuation (which I mostly didn't mind, although it still the missing apostrophe in words like dont and cant looked weird to me every time).\n",
+      "There are also these injections/introspections from the Sheriff periodically, a couple of pages in italics each time. They were a bit of a slog and I pretty much gave up on them half-way through the book.\n"
+    ],
     "id": "no-country-for-old-men"
   },
   {
     "title": "How Have You Been?",
     "type": "Music",
     "author": "Giant Rooks?",
-    "rating": 3.5,
+    "rating": 3,
     "releaseYear": 2024,
     "reviewDate": "2026-01-19T22:05:24.371Z",
-    "updatedDate": "2026-02-03T20:24:36.026Z",
-    "text": "A German band, sounds like a British Indie band from 2010. I can't quite place what it reminds me of – maybe some combination of Everything Everything, Bastille, Foals, Two Door Cinema Club, The Kooks, The Vaccines, The Walkmen.\n",
+    "updatedDate": "2026-02-22T08:59:03.849Z",
+    "text": [
+      "A German band that sounds strangely like a British Indie band from about 2010.\n",
+      "I can't quite place what it reminds me of – maybe some combination of Everything Everything, Bastille, Foals, Two Door Cinema Club, The Kooks, The Vaccines, The Walkmen.\n",
+      "Some good moments, can easily imagine some of these songs on UK radio or at a festival.\n",
+      "Might add a couple of songs to a playlist, probably won't keep playing the album, just not quite my thing.\n"
+    ],
     "id": "how-have-you-been"
   },
   {
@@ -36,8 +81,13 @@
     "rating": 3,
     "releaseYear": 2026,
     "reviewDate": "2026-01-19T08:42:33.471Z",
-    "updatedDate": "2026-02-01T10:15:41.456Z",
-    "text": "This is a movie about a police unit who find $20m of drug money hidden in a wall. It's... fine? Didn't hate it, won't remember it. \n\nThere film settled into a decent rhythm in the second act. There was some tension. But the suspense fell away though as the movie went on. The \"whodunnit\" element was given away well in advance, there were so many unsubtle clues, but when they got to the big reveal, it seemed like we were meant to be surprised by it? Maybe this is one of those films where they assume everyone on streaming isn't really paying attention. Subtle it was not. \n\nThe final act didn't work for me. I don't know if I didn't like the way the climactic chase was filmed (fast cutting, hard to follow), or if I'd just lost interest in the outcome by that point.\n\nA final nit about the aesthetic - surely this movie needed something more realistic and grittier, rather than this orange/teal colour grade and hyperreal vibe. \n",
+    "updatedDate": "2026-02-22T08:35:03.957Z",
+    "text": [
+      "It's fine. Didn't hate it, won't remember it.\n",
+      "It's not subtle at all, the twist is revealed extremely obviously in advance but then presented like it's meant to be a big surprise.\n",
+      "The third act was boring, not sure if it was the way it was cut together, or if I'd just lost interest by then.\n",
+      "Surely this movie needed a realistic and gritty aesthetic, rather than the stereotypical orange/teal colour grade and hyperreal vibe.\n"
+    ],
     "id": "the-rip"
   },
   {
@@ -47,7 +97,13 @@
     "rating": 3.5,
     "releaseYear": 2011,
     "reviewDate": "2026-01-11T13:22:45.216Z",
-    "text": "This was worth reading, even if I ultimately wasn't completely invested in the story. The narrator Eli is an interesting character to listen to, he's simple-minded but insightful; empathetic and thoughtful yet also violent. For a while it's fun to go on an odyssey with him and his brother (and their relationship is very nicely drawn), and as they trot across The West and meet a cast of characters along the way, and a lot of the prose flows beautifully, and both our characters and the story keep moving. It all stalled for me when they arrived at their destination though – in the third act and the last third of the book, it started to drag and I realised I actually wasn’t very invested in the outcome and what actually happened to these characters. The characters stopped moving, the story stopped moving. That section felt like it was from a different book - rather than a quirky travel story, we ended up in a more stodgy allegory (the characters were trying to use some chemical to help them find gold even though the chemical was killing them). The denouement after that was nicely done though (and much faster than everything that led up to it). \n",
+    "updatedDate": "2026-02-22T09:00:53.429Z",
+    "text": [
+      "Happy to have read it, even if I ultimately wasn't completely invested in the story by the end.\n",
+      "The narrator Eli is an interesting character to listen to, he's simple-minded but insightful; empathetic and thoughtful yet also violent. For a while it's fun to go on an odyssey with him and his brother (and their relationship is very nicely drawn), and as they trot across The West and meet a cast of characters along the way.\n",
+      "A lot of the prose flows beautifully, and both our characters and the story keep moving. It all stalled for me when they arrived at their destination though – in the third act and the last third of the book, it started to drag and I realised I actually wasn’t very invested in the outcome and what actually happened to these characters. The characters stopped moving, the story stopped moving. That section felt like it was from a different book - rather than a quirky travel story, we ended up in a more stodgy allegory (the characters were trying to use some chemical to help them find gold even though the chemical was killing them).\n",
+      "The denouement after that was nicely done though (and much faster than everything that led up to it).\n"
+    ],
     "id": "the-sisters-brothers"
   },
   {
@@ -56,8 +112,11 @@
     "rating": 3.5,
     "releaseYear": 2025,
     "reviewDate": "2026-01-08T20:22:33.856Z",
-    "updatedDate": "2026-02-01T10:06:00.486Z",
-    "text": "I enjoyed this film, so it was funny to see afterwards that some people absolutely hated it. I found a Reddit thread about the film that was nothing but negativity, and when they pointed out all these plot holes, I was like \"well, now you mention it, that was a bit silly\". Sometimes I find you can take against a movie for whatever reason, and from then on every nonsensical thing a character will stick out like a sore thumb and annoy the hell out of you. But sometimes you seem to just roll with a movie, and the plot holes don't seem to bother you. For me this film stayed on the right side of that line, I was willing to forgive the implausible moments. There's some action, some moral dilemmas, some good performances. I quite liked it. \n\nThe thing I remember about it most though will probably be some of the music. There's one particularly interesting choice in this movie, which was to use a kind of slightly jazzy folk piece in a lot of the key moments (the main cue is Stony Gate 2, which is a more cinematic version of Stony Gate by Fergus McCreadie - the music was striking enough that I whipped out Shazam at the time to find out what it was). That was an unconventional choice but I thought it really worked - it's propulsive, it's got the simplicity and repetition of folk music, but also a little jazzy edge that suits that moment in the movie. \n",
+    "updatedDate": "2026-02-22T09:04:12.750Z",
+    "text": [
+      "Perhaps a bit silly in places but I enjoyed it. Sometimes I find you can take against a movie for whatever reason, and from then on every nonsensical thing a character will stick out like a sore thumb and annoy the hell out of you. But sometimes you seem to just roll with a movie, and the plot holes don't seem to bother you. For me this film stayed on the right side of that line, I was willing to forgive the implausible moments. There's some action, some moral dilemmas, some good performances. I quite liked it.\n",
+      "There's one particularly interesting music choice in the movie, which was to use a jazzy folk piece in a lot of the key moments (the main cue is Stony Gate 2, which is a more cinematic version of Stony Gate by Fergus McCreadie - the music was striking enough that I whipped out Shazam at the time to find out what it was). I thought it worked great, that music might be the thing I remember most about the movie.\n"
+    ],
     "id": "highest-2-lowest"
   },
   {
@@ -67,8 +126,12 @@
     "rating": 3.5,
     "releaseYear": 2025,
     "reviewDate": "2026-01-07T22:38:45.164Z",
-    "updatedDate": "2026-02-01T09:55:37.004Z",
-    "text": "There's a lovely vibe to this album, it breezes along, it sets the mood. There’s an article by the producers in Sound on sound, and mix engineer Charlie Holmes says “When working on Olivia’s record, she said, ‘I want it to sound like a warm hug all the time.’”.\n\nThat said, it doesn't stick with me - “The Art of Loving is, in all sincerity\", say Pitchfork \"a perfect album to cook or clean to.\" The production is lovely, poppy yet naturalistic. Perhaps a few more risks and experiments would help, something to give it a bit more edge to latch on to. But then I suppose it might not be the warm hug that it is.\n",
+    "updatedDate": "2026-02-22T09:09:36.064Z",
+    "text": [
+      "\"The Art of Loving is, in all sincerity, a perfect album to cook or clean to\", say Pitchfork, and I think I agree, it's very good background music, it sets a lovely mood, but apart from \"Man I Need\", I don't remember it when it's finished\n",
+      "There’s an article by the producers in Sound on sound, and mix engineer Charlie Holmes says “When working on Olivia’s record, she said, ‘I want it to sound like a warm hug all the time.’”. That's a good description, it is a warm hug.\n",
+      "The production is great (which is why I paid for that article in Sound on sound, to see what I could find out about how they did it!).\n"
+    ],
     "id": "the-art-of-loving"
   }
 ]

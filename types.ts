@@ -11,7 +11,7 @@ export interface MediaReview {
   author?: string; // Used for Artist (Music) or Author (Book)
   type: MediaType;
   rating: number; // 1-5
-  text: string;
+  text: string[];
   releaseYear: number;
   reviewDate: string; // ISO String
   updatedDate?: string; // ISO String for last edit

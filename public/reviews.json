@@ -1,12 +1,103 @@
 [
   {
+    "title": "War Machine",
+    "type": "Movie",
+    "rating": 3.5,
+    "releaseYear": 2026,
+    "reviewDate": "2026-03-20T22:40:43.809Z",
+    "text": [
+      "This was quite good! Better than you'd expect for a Netflix action movie these days.\n",
+      "It felt almost like a fun indie movie that had suddenly been given a big budget. Like a student film where they were like, let's go into the outback and film a few scenes of us running around, we'll add some special effects later, it'll be great. But with a $60 million budget.\n",
+      "There was only really one bit where I lost interest, this chase scene that was load of boring CGI. But otherwise it was well paced, kept the suspense.\n"
+    ],
+    "id": "war-machine"
+  },
+  {
+    "title": "House of the Dragon (Season 2)",
+    "type": "TV Show",
+    "rating": 2.5,
+    "releaseYear": 2024,
+    "reviewDate": "2026-03-20T22:30:22.060Z",
+    "updatedDate": "2026-03-20T22:48:42.640Z",
+    "text": [
+      "Rewatched this show as I heard a third season was coming, and I'd enjoyed a Knight of the Seven Kingdoms, but... meh.\n",
+      "Daemon's whole arc was so dull. I read the season was reduced from 10 to 8 episodes, but it felt more like they had half as much material and were desperately stretching it out.\n",
+      "The king gets severely wounded in battle and he's close to death, but then they just like put him a wooden cart and wheel him back to King's Landing to get medical treatment. From a place that's hundreds of miles away? They don't even take his armour off until he gets back? For, reasons?\n",
+      "Aemond was a bit of a pantomime villain. One of several characters where you're like, is this bad acting or bad writing? (probably bad writing).\n",
+      "Game of Thrones was fun when it was grounded in some kind of believable reality. I mean, it's a fantasy, but when you felt anyone can die, travelling long distances takes time, people don't always get what they deserve. This show hasn't understood that, it's willing to bend the rules of the universe to serve its plot, but the plot isn't anywhere near interesting enough to justify that.\n",
+      "I couldn't really care less who gets the throne at this point. It has a little bit of the problem that I had with Succession - I just don't care about any of these people (you all loved Succession though, didn't you, so maybe you'll all like this too).\n"
+    ],
+    "id": "house-of-the-dragon-season-2"
+  },
+  {
+    "title": "The Wager: A Tale of Shipwreck, Mutiny and Murder",
+    "type": "Book",
+    "author": "David Grann",
+    "rating": 4.5,
+    "releaseYear": 2023,
+    "reviewDate": "2026-03-20T22:13:13.732Z",
+    "text": [
+      "A great book, really well written. I wasn't particularly interested in maritime history or anything in advance, I just took a punt on the book because it had been so well reviewed. I didn't actually realise it was the same author as Killers of the Flower Moon, which is also a very good book (and I know you can't just compare a film to a book, but the book is better than the film).\n",
+      "The prose is very good, occasionally I had to look up a word or a phrase, but it never felt showy or flowery, just keep the narrative moving\n",
+      "Does a very good job of humanising the people involved, even though it's almost 300 years ago you can relate to their struggle\n",
+      "My only minor nit is that the denouement is a bit fast compared to what went before, we spend a long time with some of our castaways trying to get home, and then suddenly it's like \"oh these other guys also made it back, it took 5 years\".\n",
+      "Not really tempted to take a voyage around Drake's Passage after this\n"
+    ],
+    "id": "the-wager-a-tale-of-shipwreck-mutiny-and-murder"
+  },
+  {
+    "title": "Killing Thatcher",
+    "type": "Book",
+    "author": "Rory Carroll",
+    "rating": 4.5,
+    "releaseYear": 2024,
+    "reviewDate": "2026-03-20T22:03:48.106Z",
+    "updatedDate": "2026-03-20T22:14:43.266Z",
+    "text": [
+      "A very well written book, really well paced. For example, early on it gives you the history of The Troubles in enough detail that you feel like you understand it, but not not so much background that it derails the main narrative\n",
+      "You often hear the old cliché \"reads like a thriller\" about non-fiction books, but this one does, it maintains the suspense really well, even though you have a pretty good idea what's going to happen\n",
+      "I basically knew nothing about the Brighton bombing beforehand, all the details were new to me\n",
+      "Good enough that I would definitely file under \"would happily read any other book by this author without really looking what it was about\"\n"
+    ],
+    "id": "killing-thatcher"
+  },
+  {
+    "title": "Double Indemnity",
+    "type": "Book",
+    "author": "James M. Cain",
+    "rating": 4,
+    "releaseYear": 1936,
+    "reviewDate": "2026-02-24T19:42:13.141Z",
+    "text": [
+      "It's another short book! You could read it in a couple of hours.\n",
+      "It's a fun read, even though you don't really want the narrator to get away with it, he shows his humanity sometimes, but he is a cold blooded murderer after all.\n",
+      "Has a lot in common with The Postman Always Rings Twice – narrator who isn't as clever as he thinks falls for a woman and conspires with her to murder her husband, but it all falls apart, and he ends up needing to write down his story for some reason, which we end up reading.\n",
+      "It's a bit more twisty than TPART, you're not really sure how it's going to play out.\n"
+    ],
+    "id": "double-indemnity"
+  },
+  {
+    "title": "A Knight of the Seven Kingdoms (Season 1)",
+    "type": "TV Show",
+    "rating": 4,
+    "releaseYear": 2026,
+    "reviewDate": "2026-02-24T18:56:03.817Z",
+    "text": [
+      "It's quite good! More fun and relatable than House of Dragons, which I lost interest in fairly quickly.\n",
+      "It's only 6 short episodes, so the whole thing is like a long movie really, you could probably watch it in one sitting.\n",
+      "It start a tad slowly for the first couple of episodes, but the setup all pays off later.\n"
+    ],
+    "id": "a-knight-of-the-seven-kingdoms"
+  },
+  {
     "title": "F1",
     "type": "Movie",
     "rating": 2.5,
     "releaseYear": 2025,
     "reviewDate": "2026-02-22T09:31:53.430Z",
+    "updatedDate": "2026-02-22T09:32:39.099Z",
     "text": [
-      "It's a modern big budget action movie in a nutshell, it's very slick and completely forgettable. You aren't bored when it's on, but you can't remember a thing about it a week later.\n",
+      "It's the modern big budget action movie in a nutshell – it's very slick and completely forgettable. You aren't bored when it's on, but you can't remember a thing about it a week later.\n",
       "The plot actually almost feels like a satire on F1, with drivers completely relying on safety cars and red flags for any actual jeopardy.\n",
       "The plot of the movie is that a terrible team with no points at all in the first half of the season needs to win a race in the second half of the season to save the team. I'm not the biggest F1 fan but that seems a laughably unrealistic goal, so if that's the setup, you have no choice but to fill the movie with a load of nonsense in order to achieve it.\n",
       "I did like the music though.\n"

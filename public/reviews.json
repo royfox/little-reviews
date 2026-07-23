@@ -1,5 +1,49 @@
 [
   {
+    "title": "Dune: Part Two",
+    "type": "Movie",
+    "rating": 3,
+    "releaseYear": 2024,
+    "reviewDate": "2026-07-23T19:59:24.000Z",
+    "text": [
+      "It looks beautiful, the aesthetic of it is great\n",
+      "It's quite boring in places? That's especially true in the middle part, you really need to be invested in all the lore they're talking about. But for whatever reason, I wasn't. \n",
+      "The third act feels quite rushed? Paul decides he's going to lead the Fremen after all and then about 10 minutes later he's basically declaring himself emperor of the universe? That battle also didn't make total sense - they capture the Emperor, they kill the Baron, but there's still a lot of fighting going on outside? \n"
+    ],
+    "id": "dune-part-two"
+  },
+  {
+    "title": "The Long Good-bye",
+    "type": "Book",
+    "author": "Raymond Chandler",
+    "rating": 4.5,
+    "releaseYear": 1953,
+    "reviewDate": "2026-04-12T07:03:18.000Z",
+    "text": [
+      "A very well revealed mystery, there are enough clues that you guess some of it, but probably not all of it (you don't want everything to be so obvious so there's no mystery left, but you don't want it to feel like it was unguessable either).\n",
+      "\"Off to my left there was an empty swimming-pool, and nothing ever looks emptier than an empty swimming-pool.\"\n",
+      "\"Just like a cop. They never tell you why they are doing anything. That way you don’t find out they don’t know themselves.\"\n",
+      "\"‘Big Willie Magoon,’ he said thickly. ‘A vice squad bimbo. He thinks he’s tough.’ ‘You mean he isn’t sure?’ I asked him politely. He looked at me emptily and walked away. I got my car out of the lot and drove home. In Hollywood anything can happen, anything at all.\"\n"
+    ],
+    "id": "the-long-good-bye"
+  },
+  {
+    "title": "Into Thin Air",
+    "type": "Book",
+    "author": "Jon Krakauer",
+    "rating": 3,
+    "releaseYear": 1997,
+    "reviewDate": "2026-03-30T21:10:58.435Z",
+    "text": [
+      "Worth reading, especially for the part about how the tragedy itself unfolded, and the author reckoning with their part in it. I was speed reading a little bit at times though\n",
+      "I didn't find the climbers really relatable for some reason - one of the reasons I liked the film Everest that was based on this is that it felt weirdly relatable, even though I've never been anywhere near that high the way the characters talked and carried themselves just felt very familiar, in a way that it didn't in the book\n",
+      "I got a bit frustrated with the writing at times, it was sometimes a bit flowery, lots of places where the thesaurus was used to pick a fancy word instead of a simpler one, but for me that just made it harder to read, and also made it feel less personal\n",
+      "Some of the historical diversions also didn't quite work for me. The author was trying to weave in the whole history of climbing Everest but some of these side quests felt a bit unnecessary and introduced many more names to try and remember\n",
+      "I found it hard to actually picture the terrain and the conditions from the book, I ended up looking up some videos on YouTube instead\n"
+    ],
+    "id": "into-thin-air"
+  },
+  {
     "title": "War Machine",
     "type": "Movie",
     "rating": 3.5,
@@ -8,7 +52,7 @@
     "text": [
       "This was quite good! Better than you'd expect for a Netflix action movie these days.\n",
       "It felt almost like a fun indie movie that had suddenly been given a big budget. Like a student film where they were like, let's go into the outback and film a few scenes of us running around, we'll add some special effects later, it'll be great. But with a $60 million budget.\n",
-      "There was only really one bit where I lost interest, this chase scene that was load of boring CGI. But otherwise it was well paced, kept the suspense.\n"
+      "There was only really one bit where I lost interest, this chase scene that was a load of boring CGI. But otherwise it was well paced, kept the suspense.\n"
     ],
     "id": "war-machine"
   },
@@ -22,7 +66,7 @@
     "text": [
       "Rewatched this show as I heard a third season was coming, and I'd enjoyed a Knight of the Seven Kingdoms, but... meh.\n",
       "Daemon's whole arc was so dull. I read the season was reduced from 10 to 8 episodes, but it felt more like they had half as much material and were desperately stretching it out.\n",
-      "The king gets severely wounded in battle and he's close to death, but then they just like put him a wooden cart and wheel him back to King's Landing to get medical treatment. From a place that's hundreds of miles away? They don't even take his armour off until he gets back? For, reasons?\n",
+      "The king gets severely wounded in battle and he's close to death, but then they just like put him in a wooden cart and wheel him back to King's Landing to get medical treatment. From a place that's hundreds of miles away? They don't even take his armour off until he gets back? For, reasons?\n",
       "Aemond was a bit of a pantomime villain. One of several characters where you're like, is this bad acting or bad writing? (probably bad writing).\n",
       "Game of Thrones was fun when it was grounded in some kind of believable reality. I mean, it's a fantasy, but when you felt anyone can die, travelling long distances takes time, people don't always get what they deserve. This show hasn't understood that, it's willing to bend the rules of the universe to serve its plot, but the plot isn't anywhere near interesting enough to justify that.\n",
       "I couldn't really care less who gets the throne at this point. It has a little bit of the problem that I had with Succession - I just don't care about any of these people (you all loved Succession though, didn't you, so maybe you'll all like this too).\n"
@@ -38,7 +82,7 @@
     "reviewDate": "2026-03-20T22:13:13.732Z",
     "text": [
       "A great book, really well written. I wasn't particularly interested in maritime history or anything in advance, I just took a punt on the book because it had been so well reviewed. I didn't actually realise it was the same author as Killers of the Flower Moon, which is also a very good book (and I know you can't just compare a film to a book, but the book is better than the film).\n",
-      "The prose is very good, occasionally I had to look up a word or a phrase, but it never felt showy or flowery, just keep the narrative moving\n",
+      "The prose is very good, occasionally I had to look up a word or a phrase, but it never felt showy or flowery, just kept the narrative moving\n",
       "Does a very good job of humanising the people involved, even though it's almost 300 years ago you can relate to their struggle\n",
       "My only minor nit is that the denouement is a bit fast compared to what went before, we spend a long time with some of our castaways trying to get home, and then suddenly it's like \"oh these other guys also made it back, it took 5 years\".\n",
       "Not really tempted to take a voyage around Drake's Passage after this\n"
@@ -54,7 +98,7 @@
     "reviewDate": "2026-03-20T22:03:48.106Z",
     "updatedDate": "2026-03-20T22:14:43.266Z",
     "text": [
-      "A very well written book, really well paced. For example, early on it gives you the history of The Troubles in enough detail that you feel like you understand it, but not not so much background that it derails the main narrative\n",
+      "A very well written book, really well paced. For example, early on it gives you the history of The Troubles in enough detail that you feel like you understand it, but not so much background that it derails the main narrative\n",
       "You often hear the old cliché \"reads like a thriller\" about non-fiction books, but this one does, it maintains the suspense really well, even though you have a pretty good idea what's going to happen\n",
       "I basically knew nothing about the Brighton bombing beforehand, all the details were new to me\n",
       "Good enough that I would definitely file under \"would happily read any other book by this author without really looking what it was about\"\n"
@@ -85,7 +129,7 @@
     "text": [
       "It's quite good! More fun and relatable than House of Dragons, which I lost interest in fairly quickly.\n",
       "It's only 6 short episodes, so the whole thing is like a long movie really, you could probably watch it in one sitting.\n",
-      "It start a tad slowly for the first couple of episodes, but the setup all pays off later.\n"
+      "It starts a tad slowly for the first couple of episodes, but the setup all pays off later.\n"
     ],
     "id": "a-knight-of-the-seven-kingdoms"
   },
@@ -143,9 +187,9 @@
     "updatedDate": "2026-02-22T08:42:23.770Z",
     "text": [
       "My first Cormac McCarthy book.\n",
-      "The plot is very very similar to the movie, there are subtle character difference but pretty much all the major plot points are the same (even the fact that Moss is killed off-screen, or off-page).\n",
+      "The plot is very very similar to the movie, there are subtle character differences but pretty much all the major plot points are the same (even the fact that Moss is killed off-screen, or off-page).\n",
       "I maybe speed read it a bit and missed some of the subtlety of the book, because I already knew what was going to happen from the film. So I liked the book, but that might be partly because I like the film.\n",
-      "The prose is quite minimalist, almost like a screenplay at times, and hardly any punctuation (which I mostly didn't mind, although it still the missing apostrophe in words like dont and cant looked weird to me every time).\n",
+      "The prose is quite minimalist, almost like a screenplay at times, and hardly any punctuation (which I mostly didn't mind, although the missing apostrophe in words like dont and cant looked weird to me every time).\n",
       "There are also these injections/introspections from the Sheriff periodically, a couple of pages in italics each time. They were a bit of a slog and I pretty much gave up on them half-way through the book.\n"
     ],
     "id": "no-country-for-old-men"
@@ -184,14 +228,14 @@
   {
     "title": "The Sisters Brothers ",
     "type": "Book",
-    "author": "Partrick deWitt",
+    "author": "Patrick deWitt",
     "rating": 3.5,
     "releaseYear": 2011,
     "reviewDate": "2026-01-11T13:22:45.216Z",
     "updatedDate": "2026-02-22T09:00:53.429Z",
     "text": [
       "Happy to have read it, even if I ultimately wasn't completely invested in the story by the end.\n",
-      "The narrator Eli is an interesting character to listen to, he's simple-minded but insightful; empathetic and thoughtful yet also violent. For a while it's fun to go on an odyssey with him and his brother (and their relationship is very nicely drawn), and as they trot across The West and meet a cast of characters along the way.\n",
+      "The narrator Eli is an interesting character to listen to, he's simple-minded but insightful; empathetic and thoughtful yet also violent. For a while it's fun to go on an odyssey with him and his brother (and their relationship is very nicely drawn), as they trot across The West and meet a cast of characters along the way.\n",
       "A lot of the prose flows beautifully, and both our characters and the story keep moving. It all stalled for me when they arrived at their destination though – in the third act and the last third of the book, it started to drag and I realised I actually wasn’t very invested in the outcome and what actually happened to these characters. The characters stopped moving, the story stopped moving. That section felt like it was from a different book - rather than a quirky travel story, we ended up in a more stodgy allegory (the characters were trying to use some chemical to help them find gold even though the chemical was killing them).\n",
       "The denouement after that was nicely done though (and much faster than everything that led up to it).\n"
     ],
@@ -205,7 +249,7 @@
     "reviewDate": "2026-01-08T20:22:33.856Z",
     "updatedDate": "2026-02-22T09:04:12.750Z",
     "text": [
-      "Perhaps a bit silly in places but I enjoyed it. Sometimes I find you can take against a movie for whatever reason, and from then on every nonsensical thing a character will stick out like a sore thumb and annoy the hell out of you. But sometimes you seem to just roll with a movie, and the plot holes don't seem to bother you. For me this film stayed on the right side of that line, I was willing to forgive the implausible moments. There's some action, some moral dilemmas, some good performances. I quite liked it.\n",
+      "Perhaps a bit silly in places but I enjoyed it. Sometimes I find you can take against a movie for whatever reason, and from then on every nonsensical thing a character does will stick out like a sore thumb and annoy the hell out of you. But sometimes you seem to just roll with a movie, and the plot holes don't seem to bother you. For me this film stayed on the right side of that line, I was willing to forgive the implausible moments. There's some action, some moral dilemmas, some good performances. I quite liked it.\n",
       "There's one particularly interesting music choice in the movie, which was to use a jazzy folk piece in a lot of the key moments (the main cue is Stony Gate 2, which is a more cinematic version of Stony Gate by Fergus McCreadie - the music was striking enough that I whipped out Shazam at the time to find out what it was). I thought it worked great, that music might be the thing I remember most about the movie.\n"
     ],
     "id": "highest-2-lowest"

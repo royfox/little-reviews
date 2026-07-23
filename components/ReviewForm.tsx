@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MediaType, MediaReview } from '../types';
 import { StarRating } from './StarRating';
-import { Download, X } from 'lucide-react';
+import { Save, X } from 'lucide-react';
 
 interface ReviewFormProps {
   initialData?: MediaReview;
@@ -44,14 +44,10 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ initialData, onSave, onC
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary"></div>
 
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold text-body">{isEditing ? 'Update & Download YAML' : 'Create Review YAML'}</h2>
+        <h2 className="text-2xl font-bold text-body">{isEditing ? 'Edit review' : 'Add review'}</h2>
         <button onClick={onCancel} className="text-muted hover:text-body transition-colors">
           <X size={24} />
         </button>
-      </div>
-
-      <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4 mb-6 text-sm text-blue-600 dark:text-blue-300">
-        <p><strong>Static Mode:</strong> Saving this form will download a <code>.yaml</code> file. Move this file to your <code>content/reviews/</code> folder and rebuild the site to see changes.</p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-6">
@@ -132,11 +128,11 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ initialData, onSave, onC
           <label className="block text-xs font-medium text-muted uppercase tracking-wide">Review</label>
           <textarea
             required
-            rows={6}
+            rows={12}
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder="What did you think?"
-            className="w-full bg-input border border-border rounded-lg px-4 py-3 text-body focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder-muted/70 resize-none"
+            className="w-full min-h-72 bg-input border border-border rounded-lg px-4 py-3 text-body focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder-muted/70 resize-y"
           />
         </div>
 
@@ -153,8 +149,8 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ initialData, onSave, onC
             type="submit"
             className="flex-1 py-3 px-4 bg-primary text-white rounded-xl hover:bg-indigo-500 transition-colors font-bold shadow-lg shadow-primary/25 flex justify-center items-center gap-2"
           >
-            <Download size={18} />
-            {isEditing ? 'Download Updated YAML' : 'Download YAML'}
+            <Save size={18} />
+            {isEditing ? 'Save changes' : 'Add review'}
           </button>
         </div>
       </form>

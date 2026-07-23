@@ -5,8 +5,6 @@ import { Film, Tv, BookOpen, Music } from 'lucide-react';
 
 interface ReviewCardProps {
   review: MediaReview;
-  onDelete: (id: string) => void;
-  onEdit: (id: string) => void;
   onView: (id: string) => void;
 }
 

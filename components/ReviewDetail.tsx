@@ -1,13 +1,14 @@
 import React from 'react';
 import { MediaReview, MediaType } from '../types';
 import { StarRating } from './StarRating';
-import { Film, Tv, BookOpen, Music, ArrowLeft, Calendar, Edit2 } from 'lucide-react';
+import { Film, Tv, BookOpen, Music, ArrowLeft, Calendar, Edit2, Trash2 } from 'lucide-react';
 
 interface ReviewDetailProps {
   review: MediaReview;
   onBack: () => void;
   onEdit: (id: string) => void;
   onDelete: (id: string) => void;
+  canEdit: boolean;
 }
 
 const TypeIcon: React.FC<{ type: MediaType }> = ({ type }) => {
@@ -20,7 +21,7 @@ const TypeIcon: React.FC<{ type: MediaType }> = ({ type }) => {
   }
 };
 
-export const ReviewDetail: React.FC<ReviewDetailProps> = ({ review, onBack, onEdit }) => {
+export const ReviewDetail: React.FC<ReviewDetailProps> = ({ review, onBack, onEdit, onDelete, canEdit }) => {
   const formattedDate = new Date(review.reviewDate).toLocaleDateString('en-US', {
     weekday: 'long',
     year: 'numeric',
@@ -95,15 +96,22 @@ export const ReviewDetail: React.FC<ReviewDetailProps> = ({ review, onBack, onEd
             )}
           </div>
 
-          <div className="flex gap-3">
+          {canEdit && <div className="flex gap-4">
             <button
               onClick={() => onEdit(review.id)}
               className="flex items-center gap-2 text-muted hover:text-body text-sm font-medium transition-colors"
             >
               <Edit2 size={16} />
-              Edit / Get YAML
+              Edit
             </button>
-          </div>
+            <button
+              onClick={() => onDelete(review.id)}
+              className="flex items-center gap-2 text-muted hover:text-red-600 text-sm font-medium transition-colors"
+            >
+              <Trash2 size={16} />
+              Delete
+            </button>
+          </div>}
         </footer>
       </article>
     </div>

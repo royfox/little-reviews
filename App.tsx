@@ -1,14 +1,15 @@
 import { useState, useEffect } from 'react';
 import { MediaType, MediaReview } from './types';
 import { ReviewForm } from './components/ReviewForm';
+import { AuthForm } from './components/AuthForm';
 import { ReviewCard } from './components/ReviewCard';
 import { ReviewDetail } from './components/ReviewDetail';
 import * as contentService from './services/content';
-import { Plus, Search, Film, Music, Tv, BookOpen, SlidersHorizontal, ArrowUp, ArrowDown, ChevronDown, Check } from 'lucide-react';
+import { Plus, Search, Film, Music, Tv, BookOpen, SlidersHorizontal, ArrowUp, ArrowDown, ChevronDown, Check, LogIn, LogOut } from 'lucide-react';
 
 type SortOption = 'reviewDate' | 'releaseYear' | 'rating';
 type SortDirection = 'asc' | 'desc';
-type ViewState = 'list' | 'form' | 'detail';
+type ViewState = 'list' | 'form' | 'detail' | 'auth';
 
 function App() {
   const [reviews, setReviews] = useState<MediaReview[]>([]);
@@ -21,15 +22,29 @@ function App() {
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
   const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [isSaving, setIsSaving] = useState(false);
+  const [authConfigured, setAuthConfigured] = useState(true);
+  const [username, setUsername] = useState<string | null>(null);
+  const isAuthenticated = username !== null;
 
 
   // 1. Load reviews on mount
   useEffect(() => {
     const fetchReviews = async () => {
       setIsLoading(true);
-      const data = await contentService.loadReviews();
-      setReviews(data);
-      setIsLoading(false);
+      try {
+        const [data, auth] = await Promise.all([
+          contentService.loadReviews(),
+          contentService.getAuthStatus(),
+        ]);
+        setReviews(data);
+        setAuthConfigured(auth.configured);
+        setUsername(auth.authenticated ? auth.username : null);
+      } catch (error) {
+        alert(error instanceof Error ? error.message : 'The app could not be loaded.');
+      } finally {
+        setIsLoading(false);
+      }
     };
     fetchReviews();
   }, []);
@@ -68,45 +83,49 @@ function App() {
   };
 
   const handleSaveReview = async (reviewData: Omit<MediaReview, 'id' | 'reviewDate' | 'updatedDate'>) => {
-    let newOrUpdatedReview: MediaReview;
-
-    if (activeReviewId && view === 'form') {
-      // Edit mode: Use existing ID (which is the filename slug)
-      const existing = reviews.find(r => r.id === activeReviewId);
-      if (existing) {
-        newOrUpdatedReview = {
-          ...existing,
-          ...reviewData,
-          updatedDate: new Date().toISOString()
-        };
+    if (!isAuthenticated || isSaving) return;
+    setIsSaving(true);
+    try {
+      if (activeReviewId) {
+        const updated = await contentService.updateReview(activeReviewId, reviewData);
+        setReviews(current => current.map(review => review.id === updated.id ? updated : review));
+        setView('detail');
       } else {
-        return;
+        const created = await contentService.createReview(reviewData);
+        setReviews(current => [created, ...current]);
+        setActiveReviewId(created.id);
+        updateUrl(created.id);
+        setView('detail');
       }
-    } else {
-      // New mode: Generate temporary ID (UUID)
-      newOrUpdatedReview = {
-        ...reviewData,
-        id: crypto.randomUUID(),
-        reviewDate: new Date().toISOString(),
-      };
-    }
-
-    contentService.downloadReviewYaml(newOrUpdatedReview);
-    alert("Review YAML downloaded! Please move this file to 'content/reviews/' and run the build script.");
-
-    const isEditing = activeReviewId && view === 'form';
-    if (!isEditing) {
-      updateUrl(null);
-      setView('list');
-      setActiveReviewId(null);
+    } catch (error) {
+      const apiError = error as Error & { status?: number };
+      if (apiError.status === 401) {
+        setUsername(null);
+        setView('auth');
+      }
+      alert(apiError.message || 'The review could not be saved.');
+    } finally {
+      setIsSaving(false);
     }
   };
 
-  const handleDeleteReview = (_id: string) => {
-    alert("To delete a review, please remove the corresponding YAML file from 'content/reviews/' and rebuild the site.");
+  const handleDeleteReview = async (id: string) => {
+    const review = reviews.find(item => item.id === id);
+    if (!review || !confirm(`Delete “${review.title}”? This cannot be undone.`)) return;
+    try {
+      await contentService.deleteReview(id);
+      setReviews(current => current.filter(item => item.id !== id));
+      handleBack();
+    } catch (error) {
+      alert(error instanceof Error ? error.message : 'The review could not be deleted.');
+    }
   };
 
   const handleEditReview = (id: string) => {
+    if (!isAuthenticated) {
+      setView('auth');
+      return;
+    }
     setActiveReviewId(id);
     setView('form');
     window.scrollTo({ top: 0, behavior: 'instant' });
@@ -123,6 +142,25 @@ function App() {
     setView('list');
     setActiveReviewId(null);
     updateUrl(null);
+  };
+
+  const handleAuth = async (loginUsername: string, password: string) => {
+    const result = authConfigured
+      ? await contentService.login(loginUsername, password)
+      : await contentService.setupAccount(loginUsername, password);
+    setUsername(result.username);
+    setAuthConfigured(true);
+    setView('list');
+  };
+
+  const handleLogout = async () => {
+    try {
+      await contentService.logout();
+      setUsername(null);
+      if (view === 'form') setView('list');
+    } catch (error) {
+      alert(error instanceof Error ? error.message : 'Sign out failed.');
+    }
   };
 
   const getProcessedReviews = () => {
@@ -184,7 +222,7 @@ function App() {
 
             <div className="flex items-center gap-3">
 
-              {view !== 'form' && (
+              {isAuthenticated && view !== 'form' && view !== 'auth' && (
                 <button
                   onClick={() => {
                     setActiveReviewId(null);
@@ -192,9 +230,18 @@ function App() {
                     updateUrl(null);
                   }}
                   className="text-muted hover:text-body hover:bg-surface p-1.5 rounded-full transition-all active:scale-95"
-                  title="New Review File"
+                  title="Add review"
                 >
                   <Plus size={20} />
+                </button>
+              )}
+              {isAuthenticated ? (
+                <button onClick={handleLogout} className="text-muted hover:text-body p-1.5 rounded-full" title={`Sign out ${username}`}>
+                  <LogOut size={19} />
+                </button>
+              ) : (
+                <button onClick={() => setView('auth')} className="text-muted hover:text-body p-1.5 rounded-full" title="Editor sign-in">
+                  <LogIn size={19} />
                 </button>
               )}
             </div>
@@ -213,7 +260,15 @@ function App() {
 
         {!isLoading && (
           <>
-            {view === 'form' && (
+            {view === 'auth' && (
+              <AuthForm
+                mode={authConfigured ? 'login' : 'setup'}
+                onSubmit={handleAuth}
+                onCancel={() => setView('list')}
+              />
+            )}
+
+            {view === 'form' && isAuthenticated && (
               <ReviewForm
                 initialData={activeReview}
                 onSave={handleSaveReview}
@@ -235,6 +290,7 @@ function App() {
                 onBack={handleBack}
                 onEdit={handleEditReview}
                 onDelete={handleDeleteReview}
+                canEdit={isAuthenticated}
               />
             )}
 
@@ -352,9 +408,9 @@ function App() {
                     <p className="text-muted max-w-md mx-auto">
                       {searchTerm || filterType !== 'All'
                         ? "Try adjusting your filters or search term."
-                        : "Use the button above to generate your first review file!"}
+                        : isAuthenticated ? "Use the button above to add your first review." : "No reviews have been added yet."}
                     </p>
-                    {!reviews.length && (
+                    {!reviews.length && isAuthenticated && (
                       <button
                         onClick={() => {
                           setActiveReviewId(null);
@@ -363,7 +419,7 @@ function App() {
                         }}
                         className="mt-6 text-primary hover:underline font-medium"
                       >
-                        Create your first review YAML &rarr;
+                        Create your first review &rarr;
                       </button>
                     )}
                   </div>
@@ -373,8 +429,6 @@ function App() {
                       <ReviewCard
                         key={review.id}
                         review={review}
-                        onDelete={handleDeleteReview}
-                        onEdit={handleEditReview}
                         onView={handleViewReview}
                       />
                     ))}

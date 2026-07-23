@@ -1,14 +1,11 @@
 [build]
-  # 1. Install dependencies
-  # 2. Generate the reviews.json file from YAML
-  # 3. Build the React app (Vite/Create-React-App)
-  command = "npm install && node scripts/build-reviews.js && npm run build"
-  
-  # The directory that contains the deploy-ready HTML/JS/CSS
+  command = "npm run build"
   publish = "dist"
 
+# Preserve recall.royfox.co.uk while the Cloudflare Worker remains the
+# application origin. This forced rewrite proxies pages, assets, and API calls.
 [[redirects]]
-  # Handle Single Page Application routing (rewrites all paths to index.html)
   from = "/*"
-  to = "/index.html"
+  to = "https://recall.roysfox-5b8.workers.dev/:splat"
   status = 200
+  force = true

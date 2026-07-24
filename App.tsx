@@ -215,7 +215,7 @@ function App() {
               }}
               className="flex items-center gap-1 group transition-opacity hover:opacity-90"
             >
-              <h1 className="text-2xl font-black tracking-tighter text-body font-logo italic">
+              <h1 className="text-xl font-bold tracking-tight text-slate-400 font-sans">
                 The Recall
               </h1>
             </button>
